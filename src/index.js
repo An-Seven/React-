@@ -4,9 +4,14 @@ import App from '@/layout/App';
 import { HashRouter, Route, Switch} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import DetailApp from '@/layout/DetailApp';
+
+// HashRouter 表示你给根节点root要通过路由去渲染页面
+// HashRouter 只能有一个子元素，所以会用Switch
+// Route 就表示路由的规则
 ReactDOM.render(
   <HashRouter>
     <Switch>
+      <Route path= "/detail" component = { DetailApp }/>
       <Route path = "/" component = { App }/>
     </Switch>
   </HashRouter>
