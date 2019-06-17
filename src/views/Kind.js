@@ -4,8 +4,8 @@ class Com extends React.Component {
   render () {
     return (
       <div className="box">
-        <header className="header">首页头部</header>
-        <div className="content">首页内容</div>
+        <header className="header">分类头部</header>
+        <div className="content">分类内容</div>
       </div>
     )
   }
