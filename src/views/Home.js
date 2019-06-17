@@ -9,6 +9,7 @@ class Com extends React.Component {
   }
   componentDidMount () {
     fetch('http://www.daxunxun.com/douban').then(res => res.json()).then(data => {
+      console.log(data)
       this.setState({
         prolist: data
       })

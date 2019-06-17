@@ -1,8 +1,16 @@
 import React from 'react';
-
-const Com = () => (
+import { Link } from 'react-router-dom'
+const Com = ({ prolist }) => (
   <ul className="prolist">
-    <li>22211</li>
+    {
+      prolist.map(item => (
+        <li key = {item.id}>
+          <Link to={"/detail/" + item.id}>
+            {item.title}
+          </Link>
+        </li>
+      ))
+    }
   </ul>
 )
 export default Com;
